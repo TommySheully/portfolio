@@ -1,0 +1,21 @@
+.freeLanceBlock {
+    background-color: gold;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+
+
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.button {
+    height: 100%;
+}
+

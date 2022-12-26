@@ -1,0 +1,32 @@
+.skill {
+    min-width: 220px;
+    min-height: 80px;
+    background-color: darkmagenta;
+
+    display: flex;
+    align-items: center;
+
+    text-align: center;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.icon {
+    height: 60px;
+    width: 60px;
+    background-color: black;
+}
+
+.description {
+    display: flex;
+    flex-wrap: wrap;
+    width: 150px;
+}
+
+.h4 {
+    margin: 10px 0 0 10px;
+}
+
+.p {
+    margin: 0 0 0 10px;
+}

@@ -1,5 +1,5 @@
 .header {
-    background-color: #61dafb;
+    background-color: lightblue;
     height: 80px;
     display: flex;
     justify-content: flex-end;
@@ -7,7 +7,6 @@
 
 .nav {
     display: flex;
-
     align-items: center;
     justify-content: space-around;
     width: 300px;
