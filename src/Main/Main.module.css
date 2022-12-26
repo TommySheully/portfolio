@@ -1,13 +1,18 @@
 .main {
     background-color: coral;
-
+    height: 400px;
+    display: flex;
+    justify-content: center;
 }
 
 .text {
-
+    width: 300px;
+    background-color: darkred;
 }
 
 .photo {
-
+    height: 350px;
+    width: 230px;
+    background-color: lightyellow;
 }
 
