@@ -1,0 +1,42 @@
+@import "src/common/Style/variables";
+@import "src/common/Style/mixins";
+
+.main {
+    @include container();
+
+    background-color: coral;
+    height: 100vh;
+}
+
+.text {
+    width: 300px;
+    background-color: darkred;
+}
+
+.photo {
+    height: 350px;
+    width: 230px;
+    background-color: lightyellow;
+}
+
+.containerMain {
+    background-color: #61dafb;
+    border: 1px solid;
+    box-sizing: border-box;
+
+    height: 100%;
+    width: 70%;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 900px) {
+    .containerMain {
+        justify-content: center;
+    }
+}

@@ -1,11 +1,11 @@
 .contactBlock {
-    background-color: gold;
-    min-height: 300px;
+    background-color: #dee2e6;
     display: flex;
     justify-content: center;
 }
 
 .container {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -22,27 +22,46 @@
 .contactContainer {
     display: flex;
     flex-direction: column;
-    background-color: lightyellow;
-    min-width: 200px;
+    justify-content: space-between;
+    width: 30%;
 }
 
 .formContainer {
     min-width: 200px;
+    width: 70%;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    align-items: flex-start;
 
-    margin-bottom: 20px;
-    background-color: lime;
+    padding: 5px;
 }
 
 .inputContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 48%;
+    height: 51px;
+    margin: 5px;
+}
+
+.inputContainer input {
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+
     width: 100%;
-    flex-wrap: wrap;
+    height: 51px;
+}
+
+.buttonContainer {
+    text-align: center!important;
+    width: 100%;
+    height: 30px;
+}
+
+.textareaContainer {
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    margin: 5px;
+
+    width: 100%;
+    height: 120px;
 }
 
 .formContainer textarea {
@@ -52,11 +71,38 @@
     line-height: 26px;
     letter-spacing: normal;
     font-family: "Poppins", sans-serif;
-    max-height: 300px;
-    border: 1px solid #d9d9d9;
-    margin: 40px 0 20px;
-    width: 95%;
-    height: 100px;
+
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    padding: 0.81rem 0.96rem;
+
+    width: 100%;
+    height: 120px;
+
     resize: none;
 }
 
+@media screen and (max-width: 1130px) {
+    .containerMini {
+        justify-content: center;
+    }
+    .contactContainer {
+
+        align-items: center;
+    }
+}
+
+
+
+@media screen and (max-width: 1130px) {
+    .contactContainer {
+        width: 100%;
+    }.inputContainer {
+        width: 100%;
+    }
+    .formContainer {
+        width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+    }
+}

@@ -1,14 +1,14 @@
 .freeLanceBlock {
-    background-color: gold;
+    background-color: #fff;
     display: flex;
     justify-content: center;
 }
 
 .container {
-    background-color: white;
     display: flex;
     flex-direction: column;
 justify-content: center;
+    text-align: center!important;
 
 
     margin: 0 auto;
