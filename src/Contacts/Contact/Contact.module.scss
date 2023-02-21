@@ -1,0 +1,62 @@
+@import "src/common/Style/variables";
+@import "src/common/Style/mixins";
+
+.skill {
+
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    white-space: pre-wrap;
+    word-break: break-word;
+
+    .icon {
+        height: 100%;
+        width: 20%;
+
+        @media screen and (max-width: 1130px) {
+            display: flex;
+            justify-content: flex-end;
+
+            width: 100%;
+        }
+        @media screen and (max-width: 350px) {
+            justify-content: flex-start;
+
+            height: 70px;
+            width: 70px;
+
+
+        }
+    }
+
+    .description {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        width: 80%;
+
+        margin-left: 50px;
+
+        @media screen and (max-width: 1130px) {
+            margin-left: 0px;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 350px) {
+
+            width: 90%;
+        }
+
+        .h4 {
+            margin: 0;
+        }
+        .p {
+            margin: 0;
+        }
+    }
+}
