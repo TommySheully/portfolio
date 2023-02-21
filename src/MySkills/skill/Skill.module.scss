@@ -9,7 +9,6 @@
   flex-direction: column;
   align-items: center;
 
-  text-align: center;
   white-space: pre-wrap;
   word-break: break-word;
 
@@ -20,7 +19,6 @@
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-
 
   .title {
     position: relative;
@@ -47,5 +45,6 @@
   }
   .description {
     @include text(#212529, 1rem, 400, 24px, normal);
+    text-align: center!important;
   }
 }

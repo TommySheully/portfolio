@@ -11,9 +11,9 @@ import testingIcon from "assets/img/IconSkills/testIcon.png";
 
 const MySkills = () => {
     return (
-        <div className={s.skillsBlock}>
+        <div className={s.skillsBlock} id="Skills">
             <div className={s.container}>
-                <Title title={"Skills"}/>
+                <Title title={"SKILLS"}/>
                 <div className={s.skills}>
                     <Skill title="DEVELOPMENT"
                            text="React, Redux, AXIOS, React Toolkit, GitHub, Postman"
