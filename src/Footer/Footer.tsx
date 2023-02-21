@@ -1,18 +1,17 @@
 import React from 'react';
-import s from "./Footer.module.css"
-import sCommon from "../common/Common.module.css"
+import s from "./Footer.module.scss"
 
 const Footer = () => {
     return (
-        <div className={s.FooterBlock}>
-            <div className={`${sCommon.container} ${s.container}`}>
-                <div className={s.rights}>
+        <div className={s.footerBlock}>
+            <div className={s.footerContainer}>
+                <div className={s.rightsContainer}>
                     © 2023, All Rights Reserved.
                 </div>
-                <div className={s.contacts}>
-                    <a>LINKEDIN  </a>
-                    <a>EMAIL  </a>
-                    <a>INSTAGRAM  </a>
+                <div className={s.contactsContainer}>
+                    <a className={s.aHref} href="https://www.linkedin.com/in/tommysheully"> LINKEDIN </a>
+                    <a className={s.aHref} href="https://github.com/TommySheully"> GITHUB </a>
+                    <a className={s.aHref} href="https://t.me/tommysheully"> TELEGRAM </a>
                 </div>
 
             </div>
