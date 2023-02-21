@@ -20,11 +20,11 @@ const MyPortfolio = () => {
             <div className={s.container}>
                 <Title title={"MY PORTFOLIO"}/>
                 <div className={s.portfolio}>
-                    <Portfolio title="Todolist" text="TS, Redux, RestAPI, Thunk,Material UI, Unit Tests " img={imgOne}/>
-                    <Portfolio title="THE SOCIAL NETWORK" text="TS, Redux, RestAPI, Thunk,ANT Design, Unit Tests" img={imgTwo}/>
-                    <Portfolio title="FUTURE PROJECT" text="...in progress" img={imgThree}/>
-                    <Portfolio title="FUTURE PROJECT" text="...in progress" img={imgFour}/>
-                    <Portfolio title="FUTURE PROJECT" text="...in progress" img={imgFive}/>
+                    <Portfolio title="Todolist" text="TS, React, Redux, RestAPI, Thunk,Material UI, Unit Tests, Formik" img={imgOne} link={'https://tommysheully.github.io/MeToDo/#/ToDoListsList'}/>
+                    <Portfolio title="THE SOCIAL NETWORK" text="TS, Redux, RestAPI, Thunk,ANT Design, Unit Tests, Formik" img={imgTwo}/>
+                    <Portfolio title="Counter" text="TS, Redux, React" img={imgThree} link={'https://tommysheully.github.io/TestTasksFor1MothStydy/'}/>
+                    <Portfolio title="Team Project" text="TS, React, Redux Toolkit, Axios, Material UI, Formik" img={imgFour} link={'https://igor-tech.github.io/friday-project-cards/'}/>
+                    <Portfolio title="Portfolio" text="TS, HTML, SCSS, Formik, Typewriter-effect" img={imgFive} link={'https://tommysheully.github.io/Portfolio/'}/>
                     <Portfolio title="FUTURE PROJECT" text="...in progress" img={imgSix}/>
                     <Portfolio title="FUTURE PROJECT" text="...in progress" img={imgSeven}/>
                     <Portfolio title="FUTURE PROJECT" text="...in progress" img={imgEight}/>

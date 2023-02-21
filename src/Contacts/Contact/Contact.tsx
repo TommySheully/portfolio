@@ -5,6 +5,7 @@ type propsType = {
     title: string,
     text: string,
     icon: any
+    link?: string
 }
 
 
@@ -12,7 +13,10 @@ const Contact = (props: propsType) => {
         return (
             <div className={s.skill}>
                 <div className={s.icon}>
-                    <img src={props.icon} alt={"icon"}/>
+                    <a href={props.link} className={s.btn} target="_blank" rel="noreferrer">
+                        <img src={props.icon}  alt={"icon"}/>
+                    </a>
+
                 </div>
                 <div className={s.description}>
                     <h4 className={s.h4}>{props.title}</h4>
