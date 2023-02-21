@@ -11,7 +11,7 @@ type propsType = {
 
 const Portfolio = (props: propsType) => {
     return (
-        <div className={s.portfolioBlock}>
+        <div className={s.portfolioBlock} >
             <div className={s.imgBlock} style={{backgroundImage: `url(${props.img})`}}>
                 <div className={s.overlay}>
                     <div className={s.description}>

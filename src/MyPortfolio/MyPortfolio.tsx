@@ -16,7 +16,7 @@ import imgEight from 'assets/img/PortfolioImg/photo-8.png'
 const MyPortfolio = () => {
 
     return (
-        <div className={s.portfolioBlock}>
+        <div className={s.portfolioBlock} id='Portfolio'>
             <div className={s.container}>
                 <Title title={"MY PORTFOLIO"}/>
                 <div className={s.portfolio}>
