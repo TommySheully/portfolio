@@ -12,6 +12,8 @@
     white-space: pre-wrap;
     word-break: break-word;
 
+    @include textStandard();
+
     .icon {
         height: 100%;
         width: 20%;
@@ -24,11 +26,6 @@
         }
         @media screen and (max-width: 350px) {
             justify-content: flex-start;
-
-            height: 70px;
-            width: 70px;
-
-
         }
     }
 
@@ -48,8 +45,10 @@
         }
 
         @media screen and (max-width: 350px) {
-
             width: 90%;
+            margin-left: 20px;
+
+            font-size: 1rem;
         }
 
         .h4 {

@@ -16,7 +16,6 @@ const Contact = (props: propsType) => {
                     <a href={props.link} className={s.btn} target="_blank" rel="noreferrer">
                         <img src={props.icon}  alt={"icon"}/>
                     </a>
-
                 </div>
                 <div className={s.description}>
                     <h4 className={s.h4}>{props.title}</h4>

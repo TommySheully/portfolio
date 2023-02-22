@@ -2,57 +2,92 @@
 @import "src/common/Style/mixins";
 
 .header {
-    background-color: $backgroundColor;
+  background-color: $backgroundColor;
 
-    height: 70px;
+  min-height: 70px;
+  max-height: 120px;
 
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-    position: fixed;
-    top: 0;
-    z-index: 100;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+
+  &:after {
+    content: "";
+    position: absolute;
+
+    border-bottom: 5px solid $textColorActive;
     width: 100%;
 
-    &:after {
-        content: "";
-        position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
 
-        border-bottom: 5px solid $textColorActive;
-        width: 100%;
 
-        bottom: -1px;
-        left: 50%;
-        transform: translate(-50%, 50%);
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    width: 60%;
+
+    @media screen and (max-width: 1199px) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 480px) {
+      width: 100%;
+    }
+
+    .aHref {
+      padding: 0 22px;
+      color: $titleColor;
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 19px;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      @media screen and (max-width: 719px) {
+        padding: 0 8px;
+        color: $titleColor;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 8px;
+        letter-spacing: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+
+      @media screen and (max-width: 480px) {
+        padding: 0 6px;
+        color: $titleColor;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 8px;
+        letter-spacing: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+
+      &:hover {
+        background-color: #2b2b2b;
+        border-color: #2b2b2b;
+        padding: 8px 12px;
+
+        border-width: 2px;
+
+        color: $textColorActive;
+      }
     }
 
 
-    .nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 40%;
-
-        .aHref {
-            padding: 0 22px;
-            color: $titleColor;
-            font-size: 20px;
-            font-weight: 400;
-            line-height: 19px;
-            letter-spacing: normal;
-            text-transform: uppercase;
-            text-decoration: none;
-
-            &:hover {
-                background-color: #2b2b2b;
-                border-color: #2b2b2b;
-                padding: 8px 12px;
-
-                border-width: 2px;
-
-                color: $textColorActive;
-            }
-        }
-    }
+  }
 }
 
