@@ -5,10 +5,15 @@ import Typewriter from "typewriter-effect";
 
 
 const Main = () => {
+
+    const sendHandler = () => {
+
+    }
+
     return (
         <div className={s.container} id='Main'>
             <div className={s.main}>
-                <div className={s.containerMain} >
+                <div className={s.containerMain}>
                     <div className={s.textBlock}>
                         <h2>Welcome</h2>
                         <h1 className={s.h1}>
@@ -22,12 +27,13 @@ const Main = () => {
                                     loop: true,
                                 }}
                             />
-                            </h1>
+                        </h1>
                         <p className={s.p}>Based in Minsk, Belarus.</p>
-                        <button className={s.btn}>SEND ME</button>
+                        <button className={s.btn} onClick={sendHandler}>
+                            <a className={s.aHref} href="#Contacts">SEND ME</a></button>
                     </div>
                     <div className={s.photoBlock}>
-                        <img className={s.photo} src={photo}/>
+                        <img alt="My photo" className={s.photo} src={photo}/>
                     </div>
                 </div>
             </div>

@@ -37,6 +37,7 @@
         width: 50%;
 
 
+
         @media screen and (max-width: 970px) {
           width: 80%;
           margin: 0;
@@ -66,6 +67,25 @@
           color: $titleColor;
           font-family: $fontFamily;
           font-size: 1.2rem;
+
+          .aHref {
+            padding: 0 22px;
+            color: $titleColor;
+            font-size: 26px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: normal;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            &:hover {
+
+              color: $textColorActive;
+            }
+
+          }
+
+
 
           &:hover {
             background-color: $titleColor;

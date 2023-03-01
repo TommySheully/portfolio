@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import s from './Contacts.module.scss';
 import Contact from './Contact/Contact';
 import {Title} from '../common/Title/Title';
@@ -6,7 +6,7 @@ import {Title} from '../common/Title/Title';
 import callIcon from 'assets/img/Contacts/callIcon.png'
 import emailIcon from 'assets/img/Contacts/emailIcon.png'
 import localIcon from 'assets/img/Contacts/localIcon.png'
-import {Formik, useFormik} from "formik";
+import {useFormik} from "formik";
 import {sendMessageTC, setAppStatusAC, setIsOpenAC, setErrorMessageAC} from "../App/app-slice";
 import {useAppDispatch} from "../App/story";
 

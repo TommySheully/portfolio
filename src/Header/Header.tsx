@@ -10,7 +10,7 @@ const Header = () => {
                 <a className={s.aHref} href="#Skills">Skills</a>
                 <a className={s.aHref} href="#Portfolio">Portfolio</a>
                 <a className={s.aHref} href="#Resume">Resume</a>
-                <a className={s.aHref} href="#Contacts">Contacts</a>
+                <a className={s.aHref} >Contacts</a>
             </div>
         </div>
     );
