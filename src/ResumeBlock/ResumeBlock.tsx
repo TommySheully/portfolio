@@ -22,8 +22,8 @@ export const ResumeBlock = () => {
                             titleH3={'Belarusian State Pedagogical University M. Tanka, Minsk'}
                             text={'Education at the University of Psychology, Psychologist Practitioner'}/>
                         <Experience
-                            dataP={'2019 - 2021'}
-                            titleH2={'PM Assistant'}
+                            dataP={'2019 - 2022'}
+                            titleH2={'Project Manager'}
                             titleH3={'IE Bychinov E.V'}
                             text={'Keeping records of the management team. Maintaining daily / weekly / monthly / annual reports. Сommunication with wholesale suppliers and buyers. Financial transactions. Solving current issues and difficulties of the company, analysis-research of the market for company positions.'}/>
 
