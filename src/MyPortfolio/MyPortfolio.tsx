@@ -20,7 +20,7 @@ const MyPortfolio = () => {
             <div className={s.container}>
                 <Title title={"MY PORTFOLIO"}/>
                 <div className={s.portfolio}>
-                    <Portfolio title="Todolist" text="TS, React, Redux, RestAPI, Thunk,Material UI, Unit Tests, Formik" img={imgOne} link={'https://tommysheully.github.io/MeToDo/#/ToDoListsList'}/>
+                    <Portfolio title="Todolist" text="TS, React, Redux, RestAPI, Thunk,Material UI, Unit Tests, Formik" img={imgOne} link={'https://tommysheully.github.io/to-do-list'}/>
                     <Portfolio title="THE SOCIAL NETWORK" text="TS, Redux, RestAPI, Thunk,ANT Design, Unit Tests, Formik" img={imgTwo} link={'https://tommysheully.github.io/social-network/'}/>
                     <Portfolio title="Counter" text="TS, Redux, React" img={imgThree} link={'https://tommysheully.github.io/TestTasksFor1MothStydy/'}/>
                     <Portfolio title="Team Project" text="TS, React, Redux Toolkit, Axios, Material UI, Formik" img={imgFour} link={'https://igor-tech.github.io/friday-project-cards/'}/>
