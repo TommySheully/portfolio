@@ -2,6 +2,7 @@ import React from 'react';
 import s from './Main.module.scss'
 import photo from 'assets/img/Main/portpet.jpg'
 import Typewriter from "typewriter-effect";
+/*const pdfUrl = '/CV.pdf';*/
 const pdfUrl = '/CV.pdf';
 
 
@@ -31,7 +32,7 @@ const Main = () => {
                         </h1>
                         <p className={s.p}>Based in Minsk, Belarus.</p>
                         <button className={s.btn} onClick={sendHandler}>
-                            <a className={s.aHref} href={pdfUrl} download>DOWNLOAD CV</a></button>
+                            <a className={s.aHref} href={process.env.PUBLIC_URL + '/CV.pdf'} download = {"CV#"}>DOWNLOAD CV</a></button>
                     </div>
                     <div className={s.photoBlock}>
                         <img className={s.photo} src={photo} alt="My ava"/>
