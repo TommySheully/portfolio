@@ -34,7 +34,7 @@ const Main = () => {
                             <a className={s.aHref} href={pdfUrl} download>DOWNLOAD CV</a></button>
                     </div>
                     <div className={s.photoBlock}>
-                        <img alt="My photo" className={s.photo} src={photo}/>
+                        <img className={s.photo} src={photo} alt="My ava"/>
                     </div>
                 </div>
             </div>
