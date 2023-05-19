@@ -2,8 +2,6 @@ import React from 'react';
 import s from './Main.module.scss'
 import photo from 'assets/img/Main/portpet.jpg'
 import Typewriter from "typewriter-effect";
-/*const pdfUrl = '/CV.pdf';*/
-const pdfUrl = '/CV.pdf';
 
 
 const Main = () => {
