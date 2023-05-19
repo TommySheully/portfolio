@@ -16,10 +16,10 @@ const MySkills = () => {
                 <Title title={"SKILLS"}/>
                 <div className={s.skills}>
                     <Skill title="DEVELOPMENT"
-                           text="React, Redux, AXIOS, React Toolkit, GitHub, Postman"
+                           text="React, Redux, NextJS, AXIOS, React Toolkit, GitHub, Postman, Vercel"
                            icon={devIcon}/>
                     <Skill title="FOUNDATION"
-                           text="JavaScript, TypeScript, HTML5, CSS3"
+                           text="JavaScript, TypeScript, HTML5, CSS3 (SCSS, module scc, Styled-Components, sass)"
                            icon={fondIcon}/>
                     <Skill title="TESTING"
                            text="Unit Tests, SnapShot, Storybook"
