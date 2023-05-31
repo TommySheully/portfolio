@@ -85,7 +85,7 @@ const Contacts = () => {
           <div className={s.contactContainer}>
             <Contact
               title='Phone'
-              text='Telegram account'
+              text='Telegram'
               icon={callIcon}
               link={'https://t.me/tommysheully'}
             />

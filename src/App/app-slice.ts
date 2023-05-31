@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit'
-import axios from 'axios'
+import emailjs from '@emailjs/browser'
 
 type StatusType = 'idle' | 'failed' | 'error' | 'success' | null
 
@@ -27,14 +27,11 @@ export const sendMessageTC = createAsyncThunk(
     const { message, email, name } = messageData
 
     try {
-      /*      const { data } = await axios.post(
-        'https://sheet.best/api/sheets/c13c1917-32f4-494a-bcee-2efa8a857eee',
-        { name, email, message }
-      )*/
-
-      await axios.post(
-        'https://sheet.best/api/sheets/c13c1917-32f4-494a-bcee-2efa8a857eee',
-        { name, email, message }
+      emailjs.send(
+        'service_4fabnja',
+        'template_arhr7fd',
+        { name, email, message },
+        'sZ7UGW_JqA9SCT0q4'
       )
       dispatch(setAppStatusAC('success'))
       dispatch(setIsOpenAC(true))
