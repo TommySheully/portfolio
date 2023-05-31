@@ -5,6 +5,7 @@ type propsType = {
   title: string
   text: string
   link?: string
+  linkGit?: string
   img?: any
 }
 
@@ -25,6 +26,15 @@ const Portfolio = (props: propsType) => {
               rel='noreferrer'>
               VIEW PROJECT
             </a>
+            {props.linkGit && (
+              <a
+                href={props.linkGit}
+                className={s.btn}
+                target='_blank'
+                rel='noreferrer'>
+                VIEW CODE
+              </a>
+            )}
           </div>
         </div>
       </div>

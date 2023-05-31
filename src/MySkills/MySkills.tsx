@@ -16,7 +16,7 @@ const MySkills = () => {
         <div className={s.skills}>
           <Skill
             title='DEVELOPMENT'
-            text='React, Redux, NextJS, AXIOS, React Toolkit, GitHub, Postman, Vercel'
+            text='React, Redux, React Toolkit (1 year), NextJS, AXIOS, GitHub, Postman, Vercel, Prettier'
             icon={devIcon}
           />
           <Skill
