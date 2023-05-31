@@ -21,7 +21,7 @@
       column-count: 4;
 
       width: 100%;
-      padding: 20px 0 0 75px;
+      padding: 20px 20px 20px 75px;
 
       @media screen and (max-width: 1640px) {
         column-count: 3;
@@ -33,7 +33,10 @@
       }
 
       @media screen and (max-width: 800px) {
-        column-count: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         padding: 20px 20px;
       }
     }

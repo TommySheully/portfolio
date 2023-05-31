@@ -22,9 +22,10 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-    }
-    @media screen and (max-width: 836px) {
-      justify-content: center;
+
+      @media screen and (max-width: 770px) {
+        justify-content: center;
+      }
     }
   }
 }
