@@ -1,5 +1,5 @@
-@import "src/common/Style/variables";
-@import "src/common/Style/mixins";
+@import 'src/common/Style/variables';
+@import 'src/common/Style/mixins';
 
 .contactBlock {
   background-color: $backgroundColor;
@@ -26,7 +26,6 @@
         justify-content: center;
       }
 
-
       .contactContainer {
         display: flex;
         flex-direction: column;
@@ -51,7 +50,7 @@
         padding: 5px;
 
         @media screen and (max-width: 1130px) {
-            width: 100%;
+          width: 100%;
         }
 
         .inputContainer {
@@ -79,7 +78,6 @@
           line-height: 26px;
           letter-spacing: normal;
           font-family: $fontFamily;
-
         }
 
         .inputContainerError input {
@@ -97,7 +95,6 @@
           line-height: 26px;
           letter-spacing: normal;
           font-family: $fontFamily;
-
         }
 
         .textareaContainer {
@@ -107,14 +104,11 @@
 
           width: 100%;
           height: 150px;
-
         }
 
         .buttonContainer {
           text-align: center !important;
           width: 100%;
-
-
 
           .btn {
             background-color: $colorActive;
@@ -124,7 +118,6 @@
 
             font-weight: 400;
             padding: 0.8rem 2.6rem;
-
 
             color: $textColorActive;
             font-family: $fontFamily;
@@ -139,7 +132,6 @@
       }
     }
   }
-
 }
 
 .formContainer textarea {

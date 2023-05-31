@@ -1,5 +1,5 @@
-@import "src/common/Style/variables";
-@import "src/common/Style/mixins";
+@import 'src/common/Style/variables';
+@import 'src/common/Style/mixins';
 
 .header {
   background-color: $backgroundColor;
@@ -16,7 +16,7 @@
   width: 100%;
 
   &:after {
-    content: "";
+    content: '';
     position: absolute;
 
     border-bottom: 5px solid $textColorActive;
@@ -26,7 +26,6 @@
     left: 50%;
     transform: translate(-50%, 50%);
   }
-
 
   .nav {
     display: flex;
@@ -45,9 +44,10 @@
     }
 
     .aHref {
-      padding: 0 22px;
+      //padding: 0 22px;
       color: $titleColor;
-      font-size: 26px;
+      //font-size: 26px;
+      font-size: 1.8rem;
       font-weight: 400;
       line-height: 19px;
       letter-spacing: normal;
@@ -55,9 +55,9 @@
       text-decoration: none;
 
       @media screen and (max-width: 719px) {
-        padding: 0 8px;
+        //padding: 0 8px;
         color: $titleColor;
-        font-size: 18px;
+        font-size: 1.4rem;
         font-weight: 500;
         line-height: 8px;
         letter-spacing: normal;
@@ -66,9 +66,9 @@
       }
 
       @media screen and (max-width: 480px) {
-        padding: 0 6px;
+        //padding: 0 6px;
         color: $titleColor;
-        font-size: 14px;
+        font-size: 1.2rem;
         font-weight: 500;
         line-height: 8px;
         letter-spacing: normal;
@@ -86,8 +86,5 @@
         color: $textColorActive;
       }
     }
-
-
   }
 }
-

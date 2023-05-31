@@ -1,5 +1,5 @@
-@import "src/common/Style/variables";
-@import "src/common/Style/mixins";
+@import 'src/common/Style/variables';
+@import 'src/common/Style/mixins';
 
 .container {
   background-color: $backgroundColor;
@@ -36,15 +36,12 @@
         margin: 0 0 180px 0;
         width: 50%;
 
-
-
         @media screen and (max-width: 970px) {
           width: 80%;
           margin: 0;
         }
 
         @media screen and (max-width: 430px) {
-
         }
 
         .p {
@@ -55,14 +52,12 @@
         }
 
         .btn {
-
           border-color: $titleColor;
           border-radius: 50em;
           border-width: 2px;
 
           font-weight: 400;
           padding: 0.8rem 2.6rem;
-
 
           color: $titleColor;
           font-family: $fontFamily;
@@ -79,13 +74,9 @@
             text-decoration: none;
 
             &:hover {
-
               color: $textColorActive;
             }
-
           }
-
-
 
           &:hover {
             background-color: $titleColor;
@@ -128,10 +119,6 @@
       @media screen and (max-width: 900px) {
         justify-content: center;
       }
-
     }
   }
 }
-
-
-

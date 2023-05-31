@@ -1,23 +1,23 @@
-@import "src/common/Style/variables";
-@import "src/common/Style/mixins";
+@import 'src/common/Style/variables';
+@import 'src/common/Style/mixins';
 
 .title {
-    @include text(#212529, 2rem, 600, 32px, normal);
-    font-family: $fontFamily;
+  @include text(#212529, 2rem, 600, 32px, normal);
+  font-family: $fontFamily;
 
-    margin: 20px 0 30px 0;
-    width: 100%;
-    position: relative;
+  margin: 20px 0 30px 0;
+  width: 100%;
+  position: relative;
 
-    &:after {
-        content: "";
-        position: absolute;
+  &:after {
+    content: '';
+    position: absolute;
 
-        border-bottom: 3px solid $titleActiveColor;
-        width: 80px;
+    border-bottom: 3px solid $titleActiveColor;
+    width: 80px;
 
-        bottom: -15px;
-        left: 50%;
-        transform: translate(-50%, 50%);
-    }
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
 }

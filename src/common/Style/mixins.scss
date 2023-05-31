@@ -1,4 +1,4 @@
-@import "src/common/Style/variables";
+@import 'src/common/Style/variables';
 
 @mixin flexible($justifyContent, $alignItems, $flexDirection) {
   display: flex;
@@ -13,7 +13,7 @@
   margin: 0 auto;
 
   flex-wrap: wrap;
-  @include flexible(space-between, center, 0)
+  @include flexible(space-between, center, 0);
 }
 
 @mixin textStandard() {
@@ -24,7 +24,7 @@
   letter-spacing: normal;
 }
 
-@mixin text($color,$fontSize,$fontWeight,$lineHeight, $letterSpacing) {
+@mixin text($color, $fontSize, $fontWeight, $lineHeight, $letterSpacing) {
   color: $color;
   font-size: $fontSize;
   font-weight: $fontWeight;

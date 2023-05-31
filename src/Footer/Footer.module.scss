@@ -1,5 +1,5 @@
-@import "src/common/Style/variables";
-@import "src/common/Style/mixins";
+@import 'src/common/Style/variables';
+@import 'src/common/Style/mixins';
 
 .footerBlock {
   background-color: #fff;
@@ -15,11 +15,7 @@
 
     @include container();
 
-
     .rightsContainer {
-
-
-
     }
 
     .contactsContainer {
@@ -44,14 +40,8 @@
       @media screen and (max-width: 356px) {
         display: flex;
         flex-wrap: wrap;
-          justify-content: center;
+        justify-content: center;
       }
     }
   }
 }
-
-
-
-
-
-
