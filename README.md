@@ -22,6 +22,7 @@
 - Responsive design, adapted to all devices
 - CSS Animation
 - Projects tab with examples of my work
+- My Experience tab, where I describe my work experience
 - Tab "About me", where I briefly talk about myself
 - Animated website header
 
