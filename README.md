@@ -12,6 +12,8 @@
 <img alt="CSS3" src="https://img.shields.io/badge/SCSS-1572B6?style=for-the-badge&logo=css3&logoColor=white">
 <img alt="MaterialUI" src="https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white">
 <img alt="github" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">
+<img alt="EmailJS" src="https://img.shields.io/badge/EmailJS-orange?style=for-the-badge&logo=formik&logoColor=white">
+ 
 
 ##  Peculiarities:
 
