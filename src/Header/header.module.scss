@@ -57,7 +57,7 @@
       @media screen and (max-width: 719px) {
         //padding: 0 8px;
         color: $titleColor;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         font-weight: 500;
         line-height: 8px;
         letter-spacing: normal;
@@ -68,7 +68,18 @@
       @media screen and (max-width: 480px) {
         //padding: 0 6px;
         color: $titleColor;
-        font-size: 1.2rem;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 8px;
+        letter-spacing: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+
+      @media screen and (max-width: 380px) {
+        //padding: 0 6px;
+        color: $titleColor;
+        font-size: 0.8rem;
         font-weight: 500;
         line-height: 8px;
         letter-spacing: normal;

@@ -9,31 +9,37 @@ import designIcon from 'assets/img/IconSkills/designIcon.png'
 import testingIcon from 'assets/img/IconSkills/testIcon.png'
 
 const MySkills = () => {
+  const mySkill = [
+    {
+      title: 'DEVELOPMENT',
+      text: 'React, Redux, React Toolkit (1 year), NextJS, AXIOS, GitHub, Postman, Vercel, Prettier',
+      icon: devIcon
+    },
+    {
+      title: 'FOUNDATION',
+      text: 'JavaScript, TypeScript, HTML5, CSS3 (SCSS, module scc, Styled-Components, sass)',
+      icon: fondIcon
+    },
+    {
+      title: 'TESTING',
+      text: 'Unit Tests, SnapShot, Storybook',
+      icon: testingIcon
+    },
+    {
+      title: 'DESIGN',
+      text: 'Material UI, Ant-Design etc, Figma',
+      icon: designIcon
+    }
+  ]
+
   return (
     <div className={s.skillsBlock} id='Skills'>
       <div className={s.container}>
         <Title title={'SKILLS'} />
         <div className={s.skills}>
-          <Skill
-            title='DEVELOPMENT'
-            text='React, Redux, React Toolkit (1 year), NextJS, AXIOS, GitHub, Postman, Vercel, Prettier'
-            icon={devIcon}
-          />
-          <Skill
-            title='FOUNDATION'
-            text='JavaScript, TypeScript, HTML5, CSS3 (SCSS, module scc, Styled-Components, sass)'
-            icon={fondIcon}
-          />
-          <Skill
-            title='TESTING'
-            text='Unit Tests, SnapShot, Storybook'
-            icon={testingIcon}
-          />
-          <Skill
-            title='DESIGN'
-            text='Material UI, Ant-Design etc, Figma'
-            icon={designIcon}
-          />
+          {mySkill.map((el) => (
+            <Skill title={el.title} text={el.text} icon={el.icon} />
+          ))}
         </div>
       </div>
     </div>
