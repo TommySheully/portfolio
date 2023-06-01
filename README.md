@@ -4,6 +4,7 @@
 
 ##  Stack:
 
+<div align="left">
 <img alt="React" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"> 
 <img alt="Redux Toolkit" src="https://img.shields.io/badge/Redux Toolkit-593D88?style=for-the-badge&logo=redux&logoColor=white">
 <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"> 
@@ -13,6 +14,7 @@
 <img alt="MaterialUI" src="https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white">
 <img alt="github" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">
 <img alt="EmailJS" src="https://img.shields.io/badge/EmailJS-orange?style=for-the-badge&logo=formik&logoColor=white">
+ </div>
  
 
 ##  Peculiarities:
