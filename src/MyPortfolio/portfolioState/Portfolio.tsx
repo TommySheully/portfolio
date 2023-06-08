@@ -9,7 +9,7 @@ type propsType = {
   img?: any
 }
 
-const Portfolio = (props: propsType) => {
+export const Portfolio = (props: propsType) => {
   return (
     <div className={s.portfolioBlock}>
       <div
@@ -41,5 +41,3 @@ const Portfolio = (props: propsType) => {
     </div>
   )
 }
-
-export default Portfolio

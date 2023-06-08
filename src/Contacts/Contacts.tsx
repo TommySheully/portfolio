@@ -1,6 +1,6 @@
 import React from 'react'
 import s from './Contacts.module.scss'
-import Contact from './Contact/Contact'
+import { Contact } from './Contact/Contact'
 import { Title } from '../common/Title/Title'
 
 import callIcon from 'assets/img/Contacts/callIcon.png'
@@ -9,12 +9,7 @@ import localIcon from 'assets/img/Contacts/localIcon.png'
 import { useFormik } from 'formik'
 
 import { useAppDispatch } from '../App/story'
-import {
-  sendMessageTC,
-  setAppStatusAC,
-  setErrorMessageAC,
-  setIsOpenAC
-} from '../App/app-slice'
+import { sendMessageTC, setAppStatusAC, setErrorMessageAC, setIsOpenAC } from '../App/app-slice'
 
 type FormikErrorType = {
   name?: string
@@ -22,7 +17,7 @@ type FormikErrorType = {
   message?: string
 }
 
-const Contacts = () => {
+export const Contacts = () => {
   const dispatch = useAppDispatch()
 
   const formik = useFormik({
@@ -35,9 +30,7 @@ const Contacts = () => {
       const errors: FormikErrorType = {}
       if (!values.email) {
         errors.email = 'You must fill in the field.'
-      } else if (
-        !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)
-      ) {
+      } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
         errors.email = 'Email'
       }
       if (!values.name) {
@@ -83,41 +76,23 @@ const Contacts = () => {
 
         <div className={s.containerMini}>
           <div className={s.contactContainer}>
-            <Contact
-              title='Phone'
-              text='Telegram'
-              icon={callIcon}
-              link={'https://t.me/tommysheully'}
-            />
+            <Contact title='Phone' text='Telegram link' icon={callIcon} link={'https://t.me/tommysheully'} />
             <Contact title='Email' text='dfgthii@gmail.com' icon={emailIcon} />
             <Contact title='Location' text='Minsk, Belarus' icon={localIcon} />
           </div>
 
           <form className={s.formContainer} onSubmit={formik.handleSubmit}>
             <div className={s.inputContainer}>
-              <input
-                type='text'
-                placeholder='Your Name'
-                {...formik.getFieldProps('name')}
-              />
+              <input type='text' placeholder='Your Name' {...formik.getFieldProps('name')} />
             </div>
             <div className={s.inputContainer}>
-              <input
-                type='email'
-                placeholder='Your Email'
-                {...formik.getFieldProps('email')}
-              />
+              <input type='email' placeholder='Your Email' {...formik.getFieldProps('email')} />
             </div>
             <div className={s.textareaContainer}>
-              <textarea
-                placeholder='Your Message'
-                {...formik.getFieldProps('message')}></textarea>
+              <textarea placeholder='Your Message' {...formik.getFieldProps('message')}></textarea>
             </div>
             <div className={s.buttonContainer}>
-              <button
-                type='submit'
-                className={s.btn}
-                onClick={sendMessageHandler}>
+              <button type='submit' className={s.btn} onClick={sendMessageHandler}>
                 SEND ME
               </button>
             </div>
@@ -127,5 +102,3 @@ const Contacts = () => {
     </div>
   )
 }
-
-export default Contacts

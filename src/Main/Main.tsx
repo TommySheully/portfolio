@@ -3,7 +3,7 @@ import s from './Main.module.scss'
 import photo from 'assets/img/Main/portpet.jpg'
 import Typewriter from 'typewriter-effect'
 
-const Main = () => {
+export const Main = () => {
   const sendHandler = () => {}
 
   return (
@@ -39,5 +39,3 @@ const Main = () => {
     </div>
   )
 }
-
-export default Main

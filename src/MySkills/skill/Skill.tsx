@@ -7,7 +7,7 @@ type propsType = {
   icon: any
 }
 
-const Skill = (props: propsType) => {
+export const Skill = (props: propsType) => {
   return (
     <div className={s.skill}>
       <div className={s.icon}>
@@ -18,5 +18,3 @@ const Skill = (props: propsType) => {
     </div>
   )
 }
-
-export default Skill

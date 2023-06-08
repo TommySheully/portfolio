@@ -8,7 +8,7 @@ type propsType = {
   link?: string
 }
 
-const Contact = (props: propsType) => {
+export const Contact = (props: propsType) => {
   return (
     <div className={s.skill}>
       <div className={s.icon}>
@@ -23,4 +23,3 @@ const Contact = (props: propsType) => {
     </div>
   )
 }
-export default Contact
