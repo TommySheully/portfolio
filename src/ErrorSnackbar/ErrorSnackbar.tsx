@@ -3,40 +3,34 @@ import * as React from 'react'
 import MuiAlert, { AlertProps } from '@mui/material/Alert'
 import Snackbar from '@mui/material/Snackbar'
 import Stack from '@mui/material/Stack'
-import { useDispatch, useSelector } from 'react-redux'
+import { connect } from 'react-redux'
 import { RootState } from '../App/story'
-import { setAppStatusAC, setIsOpenAC } from '../App/app-slice'
+import { setAppStatusAC, setIsOpenAC, StatusType } from '../App/app-slice'
 
-const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
-  props,
-  ref
-) {
+const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant='filled' {...props} />
 })
 
-export function ErrorSnackbar() {
-  const status = useSelector<RootState>((state) => state.app.status)
-  const isOpen = useSelector<RootState, boolean>((state) => state.app.isOpen)
+type propsType = mapStateToPropsType & mapDispatchToPropsType
 
-  const dispatch = useDispatch()
+type mapStateToPropsType = { status: StatusType; isOpen: boolean }
+type mapDispatchToPropsType = {
+  setAppStatusAC: (payload: StatusType) => void
+  setIsOpenAC: (payload: boolean) => void
+}
 
-  const handleClose = (
-    event?: React.SyntheticEvent | Event,
-    reason?: string
-  ) => {
+function ErrorSnackbar({ setIsOpenAC, isOpen, setAppStatusAC, status }: propsType) {
+  const handleClose = (event?: React.SyntheticEvent | Event, reason?: string) => {
     if (reason === 'clickaway') {
       return
     }
-    dispatch(setIsOpenAC(false))
-    dispatch(setAppStatusAC(null))
+    setIsOpenAC(false)
+    setAppStatusAC(null)
   }
 
   const severity = status === 'failed' ? 'error' : 'success'
   const message =
-    status === 'failed'
-      ? 'Sorry, there was an error.\n' +
-        'Perhaps the form is filled incorrectly.'
-      : 'success'
+    status === 'failed' ? 'Sorry, there was an error.\n' + 'Perhaps the form is filled incorrectly.' : 'success'
 
   return (
     <Stack spacing={2} sx={{ width: '100%' }}>
@@ -48,3 +42,18 @@ export function ErrorSnackbar() {
     </Stack>
   )
 }
+
+const mapStateToProps = (state: RootState): mapStateToPropsType => {
+  return {
+    status: state.app.status,
+    isOpen: state.app.isOpen
+  }
+}
+
+export const ErrorSnackbarContainer = connect<mapStateToPropsType, mapDispatchToPropsType, {}, RootState>(
+  mapStateToProps,
+  {
+    setIsOpenAC,
+    setAppStatusAC
+  }
+)(ErrorSnackbar)

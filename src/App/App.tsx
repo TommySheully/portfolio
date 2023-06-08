@@ -7,7 +7,7 @@ import { MyPortfolio } from '../MyPortfolio/MyPortfolio'
 import { Contacts } from '../Contacts/Contacts'
 import { Footer } from '../Footer/Footer'
 import s from 'App/App.module.scss'
-import { ErrorSnackbar } from '../ErrorSnackbar/ErrorSnackbar'
+import { ErrorSnackbarContainer } from '../ErrorSnackbar/ErrorSnackbar'
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       <ResumeBlock />
       <Contacts />
       <Footer />
-      <ErrorSnackbar />
+      <ErrorSnackbarContainer />
     </div>
   )
 }
