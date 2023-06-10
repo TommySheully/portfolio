@@ -9,7 +9,7 @@ export const ResumeBlock = () => {
     {
       date: '2022 - PRESENT',
       titleH2: 'Frontend Developer',
-      place: 'LLC IT-StartUp (PART-TIME)',
+      place: 'LLC Belconsole (PART-TIME)',
       text: 'Maintenance and minor maintenance of websites and applications. Creation of landing pages and spa applications, support and review of legacy code, transferring the application from class components to functional ones, working with forms, validation, tests, RESTful, BLL, DAL, Bug fixing, CRUD operation and data processing, deploy, English - A2',
       id: v1()
     },
