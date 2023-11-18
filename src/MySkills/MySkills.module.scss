@@ -11,6 +11,8 @@
   justify-content: center;
   flex-wrap: wrap;
 
+  scroll-margin-top: 60px;
+
   .container {
     @include container();
     flex-direction: column;

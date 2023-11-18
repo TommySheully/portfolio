@@ -13,25 +13,25 @@ export const MySkills = () => {
   const mySkill = [
     {
       title: 'DEVELOPMENT',
-      text: 'React, Redux, React Toolkit (1 year), NextJS, AXIOS, GitHub, Postman, Vercel, Prettier',
+      text: 'React, Redux/RTK, React Native, Next.JS, AXIOS, GitHub, React-Hook-Form, Postman, Prettier',
       icon: devIcon,
       id: v1()
     },
     {
       title: 'FOUNDATION',
-      text: 'JavaScript, TypeScript, HTML5, CSS3 (SCSS, module scc, Styled-Components, sass)',
+      text: 'JavaScript, TypeScript, HTML, CSS3 (SCSS, module scc, Styled-Components, sass)',
       icon: fondIcon,
       id: v1()
     },
     {
       title: 'TESTING',
-      text: 'Unit Tests, SnapShot, Storybook',
+      text: 'Unit Test/Jest, SnapShot, Storybook',
       icon: testingIcon,
       id: v1()
     },
     {
       title: 'DESIGN',
-      text: 'Material UI, Ant-Design etc, Figma',
+      text: 'Material UI, Ant-Design etc, Tailwind',
       icon: designIcon,
       id: v1()
     }
