@@ -16,15 +16,16 @@ import { v1 } from 'uuid'
 export const MyPortfolio = () => {
   const myPortfolio = [
     {
-      title: 'Team Project',
-      text: 'TS, React, Redux Toolkit, Axios, Material UI, Formik, Prettier',
+      title: 'Lunch Calculation',
+      text: 'TS, React, Redux Toolkit, Redux Persist, Material UI, React Hook Form, Styled-Components, pdf',
       img: imgOne,
-      link: 'https://igor-tech.github.io/friday-project-cards/',
-      linkGit: 'https://github.com/igor-tech/friday-project-cards',
+      link: 'https://lunch-calculation.vercel.app/',
+      linkGit: 'https://github.com/TommySheully/lunch-calculation',
       id: v1()
     },
+
     {
-      title: 'Todolist',
+      title: 'Task Scheduler',
       text: 'TS, React, Redux Toolkit, RestAPI, Thunk, Material UI, Unit Tests, Formik',
       img: imgThree,
       link: 'https://tommysheully.github.io/to-do-list',
@@ -32,11 +33,11 @@ export const MyPortfolio = () => {
       id: v1()
     },
     {
-      title: 'Rick and Morty - Encyclopedia',
-      text: 'NextJS, TS, React, Axios, Vercel, Styled-Components, NProgress',
+      title: 'Team Project',
+      text: 'TS, React, Redux Toolkit, Axios, Material UI, Formik, Prettier',
       img: imgTwo,
-      link: 'https://rick-and-morty-lake-phi.vercel.app',
-      linkGit: 'https://github.com/TommySheully/nextJS-Rick-and-Morti',
+      link: 'https://igor-tech.github.io/friday-project-cards/',
+      linkGit: 'https://github.com/igor-tech/friday-project-cards',
       id: v1()
     },
     {
@@ -48,19 +49,19 @@ export const MyPortfolio = () => {
       id: v1()
     },
     {
-      title: 'THE SOCIAL NETWORK',
-      text: 'TS, Redux, RestAPI, Thunk,ANT Design, Unit Tests, Formik',
+      title: 'Rick and Morty - Encyclopedia',
+      text: 'NextJS, TS, React, Axios, Vercel, Styled-Components, NProgress',
       img: imgFive,
-      link: 'https://tommysheully.github.io/social-network/',
-      linkGit: 'https://github.com/TommySheully/social-network',
+      link: 'https://rick-and-morty-lake-phi.vercel.app',
+      linkGit: 'https://github.com/TommySheully/nextJS-Rick-and-Morti',
       id: v1()
     },
     {
-      title: 'Counter',
-      text: 'TS, Redux, React',
+      title: 'THE SOCIAL NETWORK',
+      text: 'TS, Redux, RestAPI, Thunk,ANT Design, Unit Tests, Formik',
       img: imgSix,
-      link: 'https://tommysheully.github.io/TestTasksFor1MothStydy/',
-      linkGit: 'https://github.com/TommySheully/TestTasksFor1MothStydy',
+      link: 'https://tommysheully.github.io/social-network/',
+      linkGit: 'https://github.com/TommySheully/social-network',
       id: v1()
     },
     {
@@ -83,14 +84,7 @@ export const MyPortfolio = () => {
         <Title title={'MY PORTFOLIO'} />
         <div className={s.portfolio}>
           {myPortfolio.map((el) => (
-            <Portfolio
-              title={el.title}
-              text={el.text}
-              img={el.img}
-              link={el.link}
-              linkGit={el.linkGit}
-              key={el.id}
-            />
+            <Portfolio title={el.title} text={el.text} img={el.img} link={el.link} linkGit={el.linkGit} key={el.id} />
           ))}
         </div>
       </div>

@@ -5,11 +5,9 @@ export const Footer = () => {
   return (
     <div className={s.footerBlock}>
       <div className={s.footerContainer}>
-        <div className={s.rightsContainer}>© 2023, All Rights Reserved.</div>
+        <div className={s.rightsContainer}>© 2024, All Rights Reserved.</div>
         <div className={s.contactsContainer}>
-          <a
-            className={s.aHref}
-            href='https://www.linkedin.com/in/tommysheully'>
+          <a className={s.aHref} href='https://www.linkedin.com/in/tommysheully'>
             {' '}
             LINKEDIN{' '}
           </a>

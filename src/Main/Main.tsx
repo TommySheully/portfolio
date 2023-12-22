@@ -21,12 +21,13 @@ export const Main = () => {
                 }}
               />
             </h1>
-            <p className={s.p}>Based in Minsk, Belarus.</p>
+            <p className={s.p}>
+              I have 1.5 years of commercial experience <br />
+              and I`m based in Minsk, Belarus.
+            </p>
+            <p className={s.p}></p>
             <button className={s.btn} onClick={sendHandler}>
-              <a
-                className={s.aHref}
-                href={process.env.PUBLIC_URL + '/CV.pdf'}
-                download={'Rostislav Savkin CV'}>
+              <a className={s.aHref} href={process.env.PUBLIC_URL + '/CV.pdf'} download={'Rostislav Savkin CV'}>
                 DOWNLOAD CV
               </a>
             </button>

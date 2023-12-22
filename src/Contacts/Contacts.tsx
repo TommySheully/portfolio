@@ -76,7 +76,7 @@ export const Contacts = () => {
 
         <div className={s.containerMini}>
           <div className={s.contactContainer}>
-            <Contact title='Phone' text='Telegram link' icon={callIcon} link={'https://t.me/tommysheully'} />
+            <Contact title='Phone' text='write to TG' icon={callIcon} link={'https://t.me/tommysheully'} />
             <Contact title='Email' text='dfgthii@gmail.com' icon={emailIcon} />
             <Contact title='Location' text='Minsk, Belarus' icon={localIcon} />
           </div>

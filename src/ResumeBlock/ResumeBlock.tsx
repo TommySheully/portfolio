@@ -11,10 +11,9 @@ export const ResumeBlock = () => {
       titleH2: 'Frontend Developer',
       place: 'LLC ApSoft',
       text:
-        'Development of react and react native applications on TS, cross-platform development, team work on commercial projects.\n' +
-        'Work projects:\n' +
-        '• learning platform for online school, stack: react, Redux(RTK), react hook form, axios, mui, styled-components.\n' +
-        '• cross-platform application for reminders and application for measuring blood pressure, stack: react native, async storage, styled-components, native modules (java, ruby, objective-c and c++), xcod. Implemented and used gesture-handler, localization, animation, charts.',
+        'Developed react and react native applications using TS and cross-platform approach:\n' +
+        '• I participated in the development of a learning platform for an online school. I have implemented features in an authentication and authorization system, implemented a notification system, worked on components of lessons, profiles, checking assignments, and other, integrated a platform for conducting online classes. stack: react, RTK, react hook form, axios, mui, styled-components.\n' +
+        '• I participated in the development of a cross-platform application for reminders and blood pressure measurement app. I have implemented features in navigation, set up a notification system, integrated graphs and diagrams using gesture-handler, worked on application localization, created animation, implemented authentication and session management. stack: react native, async storage, styled-components, native modules (java, ruby, objective-c and c++), xcod.',
       id: v1()
     },
     {
