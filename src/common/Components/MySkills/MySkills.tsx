@@ -1,13 +1,8 @@
 import React from 'react'
 import s from './MySkills.module.scss'
-import { Skill } from './skill/Skill'
-import { Title } from '../../Title/Title'
-
-import fondIcon from '../../../assets/img/IconSkills/fundamentIcon.png'
-import devIcon from '../../../assets/img/IconSkills/devIcon.png'
-import designIcon from '../../../assets/img/IconSkills/designIcon.png'
-import testingIcon from '../../../assets/img/IconSkills/testIcon.png'
+import { Title, Skill } from 'common'
 import { v1 } from 'uuid'
+import { designIcon, devIcon, fondIcon, testingIcon } from 'assets'
 
 export const MySkills = () => {
   const mySkill = [

@@ -1,17 +1,9 @@
 import React from 'react'
 import s from './MyPortfolio.module.scss'
-import { Portfolio } from './portfolioState/Portfolio'
-import { Title } from '../../Title/Title'
+import { Title, Portfolio } from 'common'
 
-import imgOne from '../../../assets/img/PortfolioImg/photo-1.jpg'
-import imgTwo from '../../../assets/img/PortfolioImg/photo-2.png'
-import imgThree from '../../../assets/img/PortfolioImg/photo-3.png'
-import imgFour from '../../../assets/img/PortfolioImg/photo-4.png'
-import imgFive from '../../../assets/img/PortfolioImg/photo-5.png'
-import imgSix from '../../../assets/img/PortfolioImg/photo-6.png'
-import imgSeven from '../../../assets/img/PortfolioImg/photo-7.jpg'
-import imgEight from '../../../assets/img/PortfolioImg/photo-8.png'
 import { v1 } from 'uuid'
+import { imgEight, imgFive, imgFour, imgOne, imgSeven, imgSix, imgThree, imgTwo } from 'assets'
 
 export const MyPortfolio = () => {
   const myPortfolio = [

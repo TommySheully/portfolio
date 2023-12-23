@@ -1,8 +1,7 @@
 import * as React from 'react'
 
 import MuiAlert, { AlertProps } from '@mui/material/Alert'
-import Snackbar from '@mui/material/Snackbar'
-import Stack from '@mui/material/Stack'
+import { Snackbar, Stack } from '@mui/material'
 import { connect } from 'react-redux'
 import { RootState } from 'app/store'
 import { setAppStatusAC, setIsOpenAC, StatusType } from 'common'

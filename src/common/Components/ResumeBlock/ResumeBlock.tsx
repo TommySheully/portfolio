@@ -1,7 +1,6 @@
 import React from 'react'
 import s from './ResumeBlock.module.scss'
-import { Title } from '../../Title/Title'
-import { Experience } from './Experience/Experience'
+import { Title, Experience } from 'common'
 import { v1 } from 'uuid'
 
 export const ResumeBlock = () => {
