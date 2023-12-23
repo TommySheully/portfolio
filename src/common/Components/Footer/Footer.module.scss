@@ -1,0 +1,47 @@
+@import '~common/Style/variables';
+@import '~common/Style/mixins';
+
+.footerBlock {
+  background-color: #fff;
+
+  min-height: 72px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .footerContainer {
+    background-color: $textColorActive;
+
+    @include container();
+
+    .rightsContainer {
+    }
+
+    .contactsContainer {
+      padding: 0;
+      list-style-type: none;
+
+      .aHref {
+        padding: 0 13px;
+        color: $titleColor;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        &:hover {
+          color: #000000;
+        }
+      }
+
+      @media screen and (max-width: 356px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  }
+}

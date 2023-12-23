@@ -1,5 +1,5 @@
 @import 'src/common/Style/variables';
-@import 'src/common/Style/mixins';
+@import 'common/Style/mixins';
 
 .title {
   @include text(#212529, 2rem, 600, 32px, normal);

@@ -1,4 +1,4 @@
-@import 'src/common/Style/variables';
+@import 'variables';
 
 @mixin flexible($justifyContent, $alignItems, $flexDirection) {
   display: flex;

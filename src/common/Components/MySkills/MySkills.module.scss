@@ -1,0 +1,33 @@
+@import '~common/Style/variables';
+@import '~common/Style/mixins';
+
+.skillsBlock {
+  background-color: #fff;
+
+  min-height: 350px;
+  padding: 40px 0;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  scroll-margin-top: 60px;
+
+  .container {
+    @include container();
+    flex-direction: column;
+
+    height: 100%;
+    .skills {
+      width: 100%;
+
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      @media screen and (max-width: 788px) {
+        justify-content: center;
+      }
+    }
+  }
+}
