@@ -6,7 +6,7 @@ import { v1 } from 'uuid'
 export const ResumeBlock = () => {
   const myResume = [
     {
-      date: '2022 - PRESENT',
+      date: 'August 2022 - PRESENT',
       titleH2: 'Frontend Developer',
       place: 'LLC ApSoft',
       text:
