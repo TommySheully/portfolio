@@ -8,25 +8,29 @@ export const ResumeBlock = () => {
     {
       date: 'August 2022 - PRESENT',
       titleH2: 'Frontend Developer',
-      place: 'LLC ApSoft',
+      place: 'LLC “ApSoft” - Minsk',
       text:
-        'Developed react and react native applications using TS and cross-platform approach:\n' +
-        '• I participated in the development of a learning platform for an online school. I have implemented features in an authentication and authorization system, implemented a notification system, worked on components of lessons, profiles, checking assignments, and other, integrated a platform for conducting online classes. stack: react, RTK, react hook form, axios, mui, styled-components.\n' +
-        '• I participated in the development of a cross-platform application for reminders and blood pressure measurement app. I have implemented features in navigation, set up a notification system, integrated graphs and diagrams using gesture-handler, worked on application localization, created animation, implemented authentication and session management. stack: react native, async storage, styled-components, native modules (java, ruby, objective-c and c++), xcod.',
-      id: v1()
-    },
-    {
-      date: '2018 - 2022',
-      titleH2: 'Project Manager',
-      place: 'LLC Belconsole',
-      text: 'Team leadership and supervision. Implementing and optimizing business processes to enhance productivity and streamline operations within the organization. Communication with wholesale suppliers and buyers. Financial transactions. Successfully resolving critical issues and challenges.',
+        'I developed React and React Native applications using TypeScript with a cross-platform approach:\n' +
+        '• Developed an educational platform for an online school. Implemented authentication and authorization systems, notification system, and worked on lesson components, profiles, task checking, and other features. Integrated a platform for conducting online classes.\n' +
+        'Stack: React, Redux (RTK), React Hook Form, Axios, Material-UI (MUI), styled-components.\n' +
+        '• Created a cross-platform reminder application and an app for measuring blood pressure. Implemented navigation, set up a notification system, integrated charts and diagrams using gesture-handler, worked on app localization, created animations, and handled authentication and session management.\n' +
+        'Stack: React Native, AsyncStorage, styled-components, native modules (Java, Ruby, Objective-C, and C++), Xcode.',
       id: v1()
     },
     {
       date: '2022',
-      titleH2: 'Frontend Developer',
-      place: 'IT-Incubator',
-      text: 'Study in an IT-Incubator. Learning React, Redux, JS, TS, html, css and so on.',
+      titleH2: 'Frontend Mentor - React/TS/Redux',
+      place: 'LLC “IT-INCUBATOR” - Minsk',
+      text:
+        'Providing assistance to students on the training program and pedagogical projects. \n' +
+        'ESLint · NextJS · REST API · Git · Sass · AXIOS · Storybook · MUI · TS · Redux · React · WebSocket · code review · Jest · React Query · RTK-Query · RTK ',
+      id: v1()
+    },
+    {
+      date: 'November 2022 - October 2023',
+      titleH2: 'Project Manager',
+      place: 'LLC “Belconsole”',
+      text: 'Led a team within the business. Implemented and optimized business processes to improve productivity and streamline operations within the organization. Communicated with wholesale suppliers and buyers. Handled financial operations. Provided quick resolutions to critical challenges faced by the company.',
       id: v1()
     }
   ]

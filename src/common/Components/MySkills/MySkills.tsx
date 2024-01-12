@@ -8,13 +8,13 @@ export const MySkills = () => {
   const mySkill = [
     {
       title: 'DEVELOPMENT',
-      text: 'React, Redux/RTK, React Native, Next.JS, AXIOS, GitHub, React-Hook-Form, Postman, Prettier',
+      text: 'React, Redux/RTK, React Native, Next.JS, Redux-saga, Zustand, AXIOS, GitHub, React-Hook-Form, Postman, Prettier, ESLint, Vite, Webpack',
       icon: devIcon,
       id: v1()
     },
     {
       title: 'FOUNDATION',
-      text: 'JavaScript, TypeScript, HTML, CSS3 (SCSS, module scc, Styled-Components, sass)',
+      text: 'JavaScript, TypeScript, HTML, CSS3 (SCSS, module, Styled-Components, sass)',
       icon: fondIcon,
       id: v1()
     },
