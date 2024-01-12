@@ -28,8 +28,7 @@ function ErrorSnackbar({ setIsOpenAC, isOpen, setAppStatusAC, status }: propsTyp
   }
 
   const severity = status === 'failed' ? 'error' : 'success'
-  const message =
-    status === 'failed' ? 'Sorry, there was an error.\n' + 'Perhaps the form is filled incorrectly.' : 'success'
+  const message = status === 'failed' ? 'Sorry, there was an error. Perhaps the form is filled incorrectly.' : 'success'
 
   return (
     <Stack spacing={2} sx={{ width: '100%' }}>
