@@ -10,11 +10,17 @@ export const ResumeBlock = () => {
       titleH2: 'Frontend Developer',
       place: 'LLC “ApSoft” - Minsk',
       text:
-        'I developed React and React Native applications using TypeScript with a cross-platform approach:\n' +
-        '• Developed an educational platform for an online school. Implemented authentication and authorization systems, notification system, and worked on lesson components, profiles, task checking, and other features. Integrated a platform for conducting online classes.\n' +
-        'Stack: React, Redux (RTK), React Hook Form, Axios, Material-UI (MUI), styled-components.\n' +
-        '• Created a cross-platform reminder application and an app for measuring blood pressure. Implemented navigation, set up a notification system, integrated charts and diagrams using gesture-handler, worked on app localization, created animations, and handled authentication and session management.\n' +
-        'Stack: React Native, AsyncStorage, styled-components, native modules (Java, Ruby, Objective-C, and C++), Xcode.',
+        'Responsibilities:\n' +
+        'Developed React and React Native applications in TypeScript, focusing on a cross-platform approach. Creation of a learning platform for an online school with a focus on authentication, authorization, notification and lesson components. Implementation of key components such as notification systems, navigation, localization, graphs and diagrams, animations, authentication and session management.\n' +
+        '\n' +
+        'Stack: React, TypeScript, Redux/RTK, React Hook Form, Axios, Material-UI, SCSS, PHP, Vite.\n' +
+        '\n' +
+        'Achievements:\n' +
+        '• Implemented a responsive interface for an online store using React and Styled Components, focusing on convenience and attractiveness.\n' +
+        '• Optimized the performance of the web application by applying new technologies such as React Hooks and migrating the project to TypeScript, improving loading and interaction speed.\n' +
+        '• Designed and implemented a state management system using Redux (RTK) for a complex administrative interface, ensuring data stability and consistency.\n' +
+        '• Implemented a component library (Material-UI), promoting code reuse and standardization of interface design, improving development efficiency.\n' +
+        '• Actively participated in the implementation of Progressive Web Application (PWA) and Jest testing, increasing offline engagement and ensuring high levels of code quality.',
       id: v1()
     },
     {
@@ -30,7 +36,12 @@ export const ResumeBlock = () => {
       date: 'November 2022 - October 2023',
       titleH2: 'Project Manager',
       place: 'LLC “Belconsole”',
-      text: 'Led a team within the business. Implemented and optimized business processes to improve productivity and streamline operations within the organization. Communicated with wholesale suppliers and buyers. Handled financial operations. Provided quick resolutions to critical challenges faced by the company.',
+      text:
+        '• Managed the business team, ensuring coordination and achievement of goals.\n' +
+        '• Implemented business process optimization to improve operational efficiency.\n' +
+        '• Communicated with wholesale partners, maintaining strategic relationships.\n' +
+        '• Managed financial operations, including budgeting and cost analysis.\n' +
+        '• Resolved critical difficulties of the company, ensuring smooth operations.',
       id: v1()
     }
   ]
