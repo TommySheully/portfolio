@@ -20,7 +20,7 @@ export const Main = () => {
               />
             </h1>
             <p className={s.p}>
-              I have 1.5 years of commercial experience <br />
+              I have 2+ years of commercial experience <br />
               and I`m based in Minsk, Belarus.
             </p>
             <p className={s.p}></p>
